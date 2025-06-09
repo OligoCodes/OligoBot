@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-rounded">close</span>
+  </button>
+  <div class="company">
+    <img id="bot-preview" width="150px" height="150px" src="image/oligo.jpg"
+    <h1>OligoBot V1</h1>
+    <p>Powered by Oligotech</p>
+  </div>
+  <div class="chatbot-popup">
+    <!--Chatbot Header-->
+    <div class="chat-header">
+      <div class="header-info">
+        <img class="chatbot-logo" width="96px" height="96px" src="image/oligo.jpg"/>
+        <h2 class="logo-text">OligoBot 🇬🇭</h2>
+      </div>
+      <button id="close-chatbot" class="material-symbols-rounded">close
+      </button>
+    </div>
+    
+    <!--Chatbot Body-->
+    <div class="chat-body">
+      <div class="message bot-message">
+        <svg class="bot-avatar" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Antenna -->
+            <circle cx="32" cy="10" r="2" fill="currentColor"/>
+            <line x1="32" y1="12" x2="32" y2="18" stroke="currentColor" stroke-width="2"/>
+
+            <!-- Bot Head -->
+            <rect x="16" y="18" width="32" height="28" rx="6" fill="currentColor"/>
+
+            <!-- Ears / Side Antennas -->
+            <rect x="12" y="26" width="4" height="12" rx="1" fill="currentColor"/>
+            <rect x="48" y="26" width="4" height="12" rx="1" fill="currentColor"/>
+
+            <!-- Eyes -->
+            <circle cx="24" cy="32" r="3" fill="#ffffff"/>
+            <circle cx="40" cy="32" r="3" fill="#ffffff"/>
+
+            <!-- Mouth / Speaker Bar -->
+            <rect x="26" y="40" width="12" height="2" rx="1" fill="#ffffff"/>
+        </svg>
+        <div class="message-text">
+          Hello 👋 I'm OligoBot!, an advanced conversational assistant developed by Joseph Bonsu. How can I help you today?
+        </div>
+    </div>
+    
+    <!--Chat Footer-->
+    <div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message..." class="message-input" required></textarea>
+        <div class="chat-controls">
+         <button class="material-symbols-rounded" type="button" id="emoji-picker">sentiment_satisfied</button>
+         <div class="file-upload-wrapper">
+           <input type="file" accept="images/" id="file-input" hidden>
+           <img src="#"/>
+           <button class="material-symbols-rounded" type="button" id="file-upload">attach_file
+           </button>
+          <button class="material-symbols-rounded" type="button" id="file-cancel">close
+           </button>
+         </div>
+         <button class="material-symbols-rounded" type="submit" id="send-message">arrow_upward</button>
+       </div>
+      </form>
+    </div>
+  </div>
+  
+  <!--linking emoji mart -->
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+  
+    <!--linking custom script-->
+  <script src="main.js"></script>
+</body>
+</html>
