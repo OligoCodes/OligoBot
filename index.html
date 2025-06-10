@@ -119,5 +119,11 @@
       });
   }
   </script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+  const tg = window.Telegram.WebApp;
+  tg.expand(); // optional: expands the window
+  console.log("Telegram user:", tg.initDataUnsafe.user);
+</script>
 </body>
 </html>
